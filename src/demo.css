@@ -1,0 +1,436 @@
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) {
+  color: #202520;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) * {
+  box-sizing: border-box;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page)
+  :is(h1, h2, h3, p) {
+  margin: 0;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) a {
+  color: inherit;
+  text-decoration: none;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) button {
+  cursor: pointer;
+  font: inherit;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page)
+  :is(a, button, select):focus-visible {
+  outline-offset: 5px;
+  outline: 3px solid;
+}
+:is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+:is(.im-note, .br-note, .rt-note, .en-note, .au-note, .lc-note) {
+  border-top: 1px solid #8884;
+  padding: 22px 6%;
+  font-size: 11px;
+  line-height: 1.7;
+}
+:is(.im-nav, .br-nav, .rt-nav, .en-nav, .au-nav, .lc-nav) {
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 25px 6%;
+  display: flex;
+}
+:is(.im-nav, .rt-nav, .en-nav, .lc-nav) > span {
+  letter-spacing: 1.8px;
+  font-size: 9px;
+}
+:is(.im-nav, .br-nav, .rt-nav, .en-nav, .au-nav, .lc-nav) a:last-child {
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  display: flex;
+}
+:is(
+  .im-kicker,
+  .br-stay-heading > p:first-child,
+  .br-moments > p,
+  .rt-title > p,
+  .rt-manifesto > span,
+  .rt-discover-top p,
+  .en-program-heading p,
+  .au-hero > div > p:first-child,
+  .au-philosophy > span,
+  .au-rituals > div > p,
+  .au-visit > div > p:first-child,
+  .lc-care-title p,
+  .lc-plan > div > p:first-child
+) {
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.rt-page {
+  color: #203b42;
+  background: #fff8ed;
+}
+.rt-logo {
+  letter-spacing: -2px;
+  align-items: center;
+  gap: 8px;
+  font-size: 36px;
+  font-weight: 800;
+  display: flex;
+}
+.rt-nav {
+  border-bottom: 1px solid #cbd4ce;
+}
+.rt-hero {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: relative;
+}
+.rt-title {
+  z-index: 1;
+  padding: 65px 0 65px 12%;
+}
+.rt-title h1 {
+  letter-spacing: -2px;
+  margin: 30px -80px 35px 0;
+  font-family: Georgia, serif;
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+.rt-title h1 em {
+  color: #cc5039;
+}
+.rt-title a {
+  border-bottom: 1px solid;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+}
+.rt-photo {
+  min-height: 560px;
+  margin: 28px 28px 28px 0;
+  position: relative;
+  transform: rotate(2deg);
+}
+.rt-photo img {
+  border-radius: 130px 0 0;
+}
+.rt-postcard {
+  color: #342d24;
+  background: #ff795e;
+  padding: 26px;
+  font-size: 20px;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 50px;
+  right: -8px;
+  transform: rotate(-9deg);
+  box-shadow: 0 8px 25px #1b343333;
+}
+.rt-postcard em {
+  font-family: Georgia, serif;
+  font-size: 26px;
+}
+.rt-postcard svg {
+  margin-top: 15px;
+  display: block;
+}
+.rt-caption {
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-shadow: 0 1px 5px #000;
+  font-size: 7px;
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+}
+.rt-manifesto {
+  border-top: 1px solid #c7d1c9;
+  grid-template-columns: 0.45fr 1.2fr 0.8fr;
+  align-items: start;
+  gap: 30px;
+  padding: 50px 6%;
+  display: grid;
+}
+.rt-manifesto h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.rt-manifesto h2 em {
+  color: #c7533e;
+}
+.rt-manifesto > p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.rt-discover {
+  background: #e4eef1;
+  padding: 55px 6% 65px;
+}
+.rt-discover-top {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.rt-discover h2 {
+  letter-spacing: -1px;
+  margin-top: 14px;
+  font-family: Georgia, serif;
+  font-size: 41px;
+  font-weight: 400;
+}
+.rt-tabs {
+  gap: 10px;
+  margin: 27px 0;
+  display: flex;
+}
+.rt-tabs button {
+  color: inherit;
+  background: 0 0;
+  border: 1px solid #98aeb5;
+  border-radius: 30px;
+  align-items: center;
+  gap: 22px;
+  padding: 12px 18px;
+  font-size: 11px;
+  display: flex;
+}
+.rt-tabs button[aria-pressed="true"] {
+  color: #fff;
+  background: #203b42;
+  border-color: #203b42;
+}
+.rt-itinerary {
+  background: #fff8ed;
+  border: 1px solid #b9cbc9;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.rt-destination {
+  border-right: 1px dashed #a9b7af;
+  padding: 40px;
+  position: relative;
+}
+.rt-destination > span:first-child {
+  letter-spacing: 2px;
+  font-size: 9px;
+}
+.rt-destination h3 {
+  max-width: 300px;
+  margin: 24px 0;
+  font-family: Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.rt-destination > p {
+  max-width: 320px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.rt-duration {
+  background: #ffdb94;
+  margin-top: 28px;
+  padding: 9px 13px;
+  font-size: 10px;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+.rt-route {
+  padding: 30px;
+}
+.rt-route > div {
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  display: flex;
+}
+.rt-route > div > span {
+  border: 1px solid #b7c3b9;
+  border-radius: 50%;
+  flex-shrink: 0;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 10px;
+  display: grid;
+}
+.rt-route > div p {
+  font-size: 13px;
+}
+.rt-route small {
+  color: #667a7c;
+  margin-top: 3px;
+  font-size: 9px;
+  display: block;
+}
+.rt-route button {
+  color: #fff;
+  background: #cb4b34;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 11px;
+  display: flex;
+}
+.rt-route > p {
+  min-height: 44px;
+  margin-top: 14px;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.rt-bottom {
+  align-items: center;
+  gap: 30px;
+  padding: 45px 6%;
+  display: flex;
+}
+.rt-bottom > span {
+  letter-spacing: 1px;
+  max-width: 160px;
+  font-size: 8px;
+}
+.rt-bottom > p {
+  flex: 1;
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+.rt-bottom > a {
+  border: 1px solid #26464a;
+  border-radius: 50%;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  display: grid;
+}
+@media (max-width: 760px) {
+  :is(.im-nav, .br-nav, .rt-nav, .en-nav, .au-nav, .lc-nav) {
+    gap: 15px;
+    padding: 20px 6%;
+  }
+  :is(.im-nav, .rt-nav, .en-nav, .lc-nav) > span {
+    display: none;
+  }
+  :is(.im-nav, .br-nav, .rt-nav, .en-nav, .au-nav, .lc-nav) a:last-child {
+    gap: 7px;
+    font-size: 10px;
+  }
+  .im-hero,
+  .rt-hero,
+  .au-hero,
+  .lc-hero {
+    grid-template-columns: 1fr;
+  }
+  .rt-title {
+    padding: 40px 7% 35px;
+  }
+  .rt-title h1 {
+    letter-spacing: -1.8px;
+    margin: 25px 0;
+    font-size: 47px;
+  }
+  .rt-title > p {
+    font-size: 8px;
+  }
+  .rt-photo {
+    height: 360px;
+    min-height: 0;
+    margin: 0 7% 35px;
+    transform: rotate(1deg);
+  }
+  .rt-photo img {
+    border-radius: 90px 0 0;
+  }
+  .rt-postcard {
+    padding: 20px;
+    font-size: 16px;
+    bottom: 35px;
+    right: -7px;
+  }
+  .rt-postcard em {
+    font-size: 22px;
+  }
+  .rt-manifesto {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 35px 7%;
+  }
+  .rt-manifesto h2 {
+    font-size: 29px;
+  }
+  .rt-discover {
+    padding: 40px 7%;
+  }
+  .rt-discover h2 {
+    font-size: 35px;
+    line-height: 1.1;
+  }
+  .rt-discover-top svg {
+    display: none;
+  }
+  .rt-tabs {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .rt-tabs button {
+    gap: 10px;
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+  .rt-itinerary {
+    grid-template-columns: 1fr;
+  }
+  .rt-destination {
+    border-bottom: 1px dashed #a9b7af;
+    border-right: 0;
+    padding: 27px;
+  }
+  .rt-destination h3 {
+    font-size: 38px;
+  }
+  .rt-route {
+    padding: 23px;
+  }
+  .rt-bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px 7%;
+  }
+  .rt-bottom > span {
+    width: 100%;
+    max-width: none;
+    font-size: 8px;
+  }
+  .rt-bottom > p {
+    font-size: 24px;
+  }
+  .rt-bottom > a {
+    width: 49px;
+    height: 49px;
+  }
+  .rt-bottom > a svg {
+    width: 25px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.im-page, .br-page, .rt-page, .en-page, .au-page, .lc-page) * {
+    scroll-behavior: auto !important;
+  }
+}
